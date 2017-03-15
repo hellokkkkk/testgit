@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"> -->
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="screen-orientation" content="portrait">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <title>保护树木，低碳阅读</title>
+    <link rel="stylesheet" type="text/css" href="treecoupon/css/tree.css">
+    <script src="treecoupon/js/zepto.min.js"></script>
+
+</head>
+
+<body>
+<div id="first"><img src="treecoupon/img/remind.png" onclick="go()" style="width: 100%;height: 100%"></div>
+<div id="container">
+	<div id="guidePanel"></div>
+	<div id="gamepanel">
+		<div class="score-wrap">
+            <div class="heart"></div>
+            <span id="score">0</span>
+        </div>
+		<canvas id="stage" width="100%" height="100%"></canvas>
+	</div>
+	<div id="gameoverPanel"></div>
+	<div id="resultPanel">
+        <div class="weixin-share"></div>
+        <a href="javascript:void(0)" class="replay"></a>
+        <div id="message" class="message"></div>
+        <div id="fenghao">
+            <img id="coupon1" class="coupon" src="treecoupon/img/yinhen.png">
+            <img id="coupon2" class="coupon" src="treecoupon/img/geili.png">
+        </div>
+        <div id="scorecontent">
+        	<span id="stime" class="lighttext"></span><span id="sscore" class="lighttext"></span><br><span id="suser" class="lighttext"></span>
+        </div>
+        <div class="textc">
+        	<span class="btn1 read">开启低碳阅读</span>
+        </div>
+	</div>
+</div>
+<script type="text/javascript">
+    function go() {
+        document.getElementById('first').style.display='none';
+        document.getElementById('container').style.display='block';
+    }
+</script>
+<script src="treecoupon/js/tree.js"></script>
+
+</body>
+</html>
